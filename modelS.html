@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>ModelS</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        .Section1 {
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/9584e5ae-f8df-4e18-8aa3-c84ce07e1fb2/bvlatuR/std/2880x1800/Model-S-Main-Hero-Desktop-LHD?quality=auto-medium&amp;format=auto);
+            background-position: center;
+            background-size: cover;
+            padding: 10px;
+            top: 0;
+            left: 0;
+        }
+        .Navbar {
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: transparent;
+            padding: 10px;
+            left: 0;
+            top: 0;
+        }
+        .logo {
+            width: 150px;
+            margin-top: 40px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid red; */
+            height: 20px;
+            cursor: pointer;
+            background-image: url(https://www.freepnglogos.com/uploads/tesla-logo-png-20.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .Navul {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: none;
+            margin-left: 250px;
+            margin-top: 40px;
+            color: black;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        .Navlist {
+            list-style: none;
+            display: inline;
+            /* border: 1px solid red; */
+            width: max-content;
+            margin-left: 10px;
+        }
+
+        .Navlist a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .Navlist a:hover{
+            background-color: silver;
+        } 
+        .nav2 {
+            list-style: none;
+            display: inline;
+            /* border: 1px solid red; */
+            width: max-content;
+            /* margin-left: 10px; */
+        }
+        .nav2 a {
+            text-decoration: none;
+            color: black;
+            margin-left: 15px;
+        }
+        .navul2 {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: none;
+            margin-left: 1250px;
+            margin-top: -40px;
+            color: black;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        .h1{
+            font-size: 38px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .plaid{
+            text-align: center;
+            margin-top: 10px;
+            font-weight: lighter;
+            font-size: 28px;
+        }
+        .range{
+            color: white;
+            margin: 52px;
+            display: inline;
+            vertical-align: bottom;
+        }
+        .features{
+            width: max-content;
+            /* border: 1px  solid; */
+            margin-left: 300px;
+            margin-top: 400px;
+        }
+        .details{
+            width: max-content;
+            /* border: 1px  solid; */
+            margin-left: 263px;
+            /* margin-top: 20px; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .d1{
+            color: white;
+            margin: 57px;
+            display: inline;
+            vertical-align: bottom;
+            font-weight: bold;
+        }
+        .btn1{
+            height: 40px;
+            width: 230px;
+            border: 3px solid white;
+            background-color: transparent;
+            margin-left: 1060px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 16px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .btn1:hover{
+            background-color: white;
+            color: black;
+        }
+        .blackdiv{
+            height: 180px;
+            width: 100%;
+            background-color: black;
+            margin-top: -40px;
+            box-shadow: -1px 1px 29px 26px rgba(0,0,0,0.96);
+            padding: 2px;
+        }
+        .Section2{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/5805821a-f3cd-408d-aa50-53195f08359c/bvlatuR/std/2880x1800/Model-S-Interior-Hero-Desktop-LHD?quality=auto-medium&amp;format=auto);
+            background-position: center;
+            background-size: cover;
+            padding: 2px;
+            top: 0;
+            left: 0;
+        }
+        .h2{
+            font-size: 28px;
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+        .Section4{
+            height: 270vh;
+            width: 100%;
+            border: 1px solid;
+            background-color: black;
+        }
+        .videodiv{
+            height: 80vh;
+            width: 1250px;
+            /* border: 1px solid red; */
+            border-radius: 15px;
+            margin-left: 120px;
+            margin-top: 80px;
+            overflow: hidden;
+        }
+        .Video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .textdiv4{
+            height: 140px;
+            width: 700px;
+            /* border: 1px solid red; */
+            margin-left: 400px;
+            margin-top: 50px;
+        }
+        .hdng4{
+            color: white;
+            margin-top: 10px;
+        }
+        .scborder{
+            height: 350px;
+            width: 1200px;
+            /* border: 1px solid red; */
+            margin-left: 180px;
+            margin-top: 100px;
+        }
+        .imgdiv1{
+            height: 300px;
+            width: 500px;
+            border: 1px solid ;
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/180e927c-0542-4428-beb7-1411502fe3bb/bvlatuR/std/1040x584/MS-Interior-Grid-A-Desktop);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .tdiv1{
+            display: inline-block;
+            vertical-align: middle;
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid red; */
+            margin-left: 70px;
+        }
+        .h4{
+            color: white;
+        }
+        .p4{
+            color: white;
+            font-weight: lighter;
+            margin-top: 20px;
+        }
+        .slider1{
+            height: 15px;
+            width: 15px;
+            border-radius: 15px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: top;
+            margin: 4px;
+        }
+        .slider{
+            height: 15px;
+            width: 15px;
+            border-radius: 15px;
+            border: none;
+            background-color: gray;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: top;
+            margin: 4px;
+        }
+        .para4{
+            color: white;
+            margin-top: 20px;
+        }
+        .immersiveborder{
+            height: 350px;
+            width: 1200px;
+            /* border: 1px solid red; */
+            margin-left: 190px;
+            /* margin-top: 40px; */
+        }
+        .tdiv2{
+            display: inline-block;
+            vertical-align: middle;
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid red; */
+        }
+        .viddiv2{
+            height: 300px;
+            width: 500px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 110px;
+        }
+        .Video2{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .roomborder{
+            height: 350px;
+            width: 1200px;
+            /* border: 1px solid red; */
+            margin-left: 190px;
+            /* margin-top: 40px; */
+        }
+        .imgdiv3{
+            height: 300px;
+            width: 500px;
+            border: 1px solid ;
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ab165f41-fa4e-4abe-b82a-51bdc295cf42/bvlatuR/std/1040x584/MS-Interior-Grid-D-Desktop);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .tdiv3{
+            display: inline-block;
+            vertical-align: middle;
+            height: 100px;
+            width: max-content;
+            margin-left: 60px;
+            /* border: 1px solid red; */
+        }
+        .Section5{
+            height: 70vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/5e9498f6-c994-43eb-9923-56dbdc8e1a6f/bvlatuR/std/2800x1750/Model-S-Performance-Hero-Desktop-LHD?quality=auto-medium&amp;format=auto);
+            background-position: center;
+            background-size: cover;
+            padding: 2px;
+        }
+        .range5{
+            color: white;
+            margin: 100px;
+            display: inline;
+            vertical-align: bottom;
+        }
+        .features5{
+            width: max-content;
+            /* border: 1px  solid; */
+            margin-left: 350px;
+            margin-top: 400px;
+        }
+        .details5{
+            width: max-content;
+            height: 100px;
+            /* border: 1px  solid; */
+            margin-left: 350px;
+            /* margin-top: 20px; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .d5{
+            color: white;
+            margin: 98px;
+            display: inline;
+            vertical-align: bottom;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .d4{
+            color: white;
+            /* margin: 98px; */
+            display: inline;
+            vertical-align: bottom;
+            font-weight: lighter;
+            font-size: 15px;
+            margin-left: 50px;
+        }
+        .Section6{
+            height: 30vh;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+        .parent6{
+            height: 220px;
+            width: 1200px;
+            margin-left: 200px;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+        }
+        .textdivr{
+            height: 220px;
+            width: max-content;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .h6{
+            font-weight: lighter;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .hdng6{
+            margin-top: 20px;
+        }
+        .btn2{
+            height: 40px;
+            width: 180px;
+            background-color: transparent;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 50px;
+            /* margin-left: 480px; */
+            border: 2px solid black;
+        }
+        .btn2:hover{
+            color: white;
+            background-color: black;
+        }
+        .btn3{
+            height: 40px;
+            width: 180px;
+            background-color: rgb(244,244,244);
+            color: rgb(57,60,65);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 30px;
+            border: none;
+        }
+        .textdivl{
+            height: 220px;
+            width: max-content;
+            /* border: 1px solid purple; */
+            display: inline-block;
+        }
+        .para6{
+            line-height: 20px;
+            margin-top: 30px;
+            color: rgb(57,60,65);
+        }
+        .Section7{
+            height: 195vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: rgb(244,244,244);
+            padding: 10px;
+        }
+        .textdiv7{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid red; */
+            margin-top: 130px;
+            margin-left: 150px;
+        }
+        .para7{
+            margin-top: 40px;
+            font-size: 17px;
+            color: rgb(66, 68, 71);
+        }
+        .imgdiv7{
+            height: 700px;
+            width: 1360px;
+            /* border: 1px solid red; */
+            border-radius: 8px;
+            margin-top: 120px;
+            margin-left: 80px;
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/c91be877-2b40-4a1c-a0e8-438bcddff35f/bvlatuR/std/2880x1235/Model-S-Plaid-Tri-Motor-Powertrain-Carousel-Desktop?quality=auto-medium&amp;format=auto);
+            background-position: center;
+            background-size: cover;
+        }   
+        .parenttext{
+            height: 330px;
+            width: 1150px;
+            /* border: 1px solid red; */
+            margin-top: 60px;
+            margin-left: 200px;
+        }
+        .modelS{
+            height: 300px;
+            width: 550px;
+            /* border: 1px solid red; */
+            border-top: 4px solid black;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .t7{
+            margin-top: 8px;
+            font-size: 20px;
+        }
+        .p7{
+            line-height: 17px;
+            margin-top: 30px;
+        }
+        .f7{
+            height: 100px;
+            width: 500px;
+            /* border: 1px solid red; */
+            margin-top: 60px;
+        }
+        .block1{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .s1{
+            font-size: 28px;
+        }
+        .s2{
+            color: rgb(66, 68, 71);
+            margin-top: 5px;
+        }
+        .block2{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+        }
+        .block3{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+        }
+        .modelS:hover{
+            color: rgb(155,156,159);
+            border-top: 4px solid rgb(155,156,159);
+        }
+        .modelSplaid{
+            height: 300px;
+            width: 550px;
+            /* border: 1px solid red; */
+            border-top: 4px solid black;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            cursor: pointer;
+
+        }
+        .tp7{
+            margin-top: 8px;
+            font-size: 20px;
+        }
+        .pp7{
+            line-height: 17px;
+            margin-top: 30px;
+        }
+        .fp7{
+            height: 100px;
+            width: 500px;
+            /* border: 1px solid red; */
+            margin-top: 40px;
+        }
+        .block1{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .s1{
+            font-size: 28px;
+        }
+        .s2{
+            color: rgb(66, 68, 71);
+            margin-top: 5px;
+        }
+        .block2{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+        }
+        .block3{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+        }
+        .modelSplaid:hover{
+            color: rgb(155,156,159);
+            border-top: 4px solid rgb(155,156,159);
+        }
+        .footer7{
+            text-align: center;
+            color: rgb(66, 68, 71);
+        }
+        .Section8{
+            height: 100vh;
+            width: 100%;
+            border: 1px solid;
+            background-color: black;
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/1a7a8b65-509b-4622-ad25-3f5b61fefb6e/bvlatuR/std/2880x1800/Model-S-Exterior-Hero-Desktop-Global?quality=auto-medium&amp;format=auto);
+            background-position: bottom;
+            background-size: cover;
+            padding: 50px;
+        }
+        .parent8{
+            height: 220px;
+            width: 1200px;
+            margin-left: 200px;
+            margin-top: 500px;
+            /* border: 1px solid red; */
+            color: white;
+        }
+        .textdivr8{
+            height: 220px;
+            width: max-content;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .h8{
+            font-weight: lighter;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .hdng8{
+            margin-top: 20px;
+        }
+        .btn4{
+            height: 40px;
+            width: 180px;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 50px;
+            /* margin-left: 480px; */
+            border: 3px solid white;
+        }
+        .btn4:hover{
+            color: black;
+            background-color: white;
+
+        }
+        .btn5{
+            height: 40px;
+            width: 180px;
+            background-color: rgb(34,34,34);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 30px;
+            border: none;
+        }
+        .textdivl8{
+            height: 220px;
+            width: max-content;
+            /* border: 1px solid purple; */
+            display: inline-block;
+        }
+        .para8{
+            line-height: 20px;
+            margin-top: 30px;
+        }
+        .Section9{
+            height: 150vh;
+            width: 100%;
+            /* border: 1px solid; */
+            background-color: black;
+            padding: 1px;
+        }
+        .perfborder{
+            height: 300px;
+            width: 1200px;
+            /* border: 1px solid red; */
+            margin-left: 180px;
+            margin-top: 130px;
+        }
+        .tdiv9{
+            display: inline-block;
+            vertical-align: middle;
+            height: 100px;
+            width: max-content;
+            margin-left: 60px;
+            /* border: 1px solid red; */
+        }
+        .h9{
+            color: white;
+            font-weight: lighter;
+        }
+        .p9{
+            color: white;
+            font-weight: lighter;
+            margin-top: 20px;
+        }
+        .imgdiv9{
+            height: 320px;
+            width: 560px;
+            /* border: 1px solid red; */
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/f68af0b5-579e-40e4-8bc4-5e7c3b57dd05/bvlatuR/std/2880x1620/Model-S-Exterior-Grid-A-Desktop-Global?quality=auto-medium&amp;format=auto);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 100px;
+        }
+        .aerodborder{
+            height: 350px;
+            width: 1200px;
+            /* border: 1px solid red; */
+            margin-left: 180px;
+            margin-top: 20px;
+        }
+        .imgdiva9{
+            height: 300px;
+            width: 550px;
+            border: 1px solid ;
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/1020d97e-9a6f-4932-9914-0ce889ecfaa6/bvlatuR/std/3840x2156/Model-S-Exterior-Grid-B-Desktop-Global);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .tdiva9{
+            display: inline-block;
+            vertical-align: middle;
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid red; */
+            margin-left: 90px;
+        }
+        .h9{
+            color: white;
+        }
+        .p9{
+            color: white;
+            font-weight: lighter;
+            margin-top: 20px;
+        }
+        .stylingborder{
+            height: 300px;
+            width: 1200px;
+            /* border: 1px solid red; */
+            margin-left: 180px;
+            margin-top: -40px;
+        }
+        .tdivs9{
+            display: inline-block;
+            vertical-align: middle;
+            height: 100px;
+            width: max-content;
+            margin-left: 60px;
+            /* border: 1px solid red; */
+        }
+        .hs9{
+            color: white;
+            font-weight: lighter;
+        }
+        .ps9{
+            color: white;
+            font-weight: lighter;
+            margin-top: 20px;
+        }
+        .imgdivs9{
+            height: 320px;
+            width: 560px;
+            /* border: 1px solid red; */
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/94efd4e4-8606-4e90-bca7-bde973623993/bvlatuR/std/2880x1620/Model-S-Exterior-Grid-C-Desktop-Global?quality=auto-medium&amp;format=auto);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 70px;
+        }
+        .Section10{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid; */
+            /* background-color: black; */
+            /* padding: 1px; */
+        }
+        .videodiv3{
+            height: 100vh;
+            width: 1080px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -2px;
+        }
+        .Video3{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .parent10{
+            height: 10vh;
+            width:1100px;
+            /* border: 5px solid purple; */
+            /* background-color: rgba(255, 255, 255, 0.179); */
+            margin-top: -150px;
+            margin-left: 80px;
+        }
+        .vblock1{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            text-align: center;
+        }
+        .v1{
+            font-size: 28px;
+        }
+        .v2{
+            color: white;
+            margin-top: 5px;
+        }
+        .vblock2{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+            color: white;
+            text-align: center;
+        }
+        .vblock3{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+            color: white;
+            text-align: center;
+        }
+        .textdiv10{
+            height: 100vh;
+            width: 418px;
+            /* border: 1px solid red; */
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -3px;
+        }
+        .rangediv{
+            height: 300px;
+            width: max-content;
+            margin-top: 70px;
+            margin-left: 50px;
+            /* border: 1px solid red; */
+        }
+        .r10{
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        .h10{
+            margin-top: 10px;
+        }
+        .p10{
+            margin-top: 20px;
+            line-height: 20px;
+        }
+        .p10 a{
+            color: black;
+            cursor: pointer;
+        }
+        .p10 a:hover{
+            text-decoration: underline 2px;
+        }
+        .btnborder{
+            height: 100px;
+            width: 240px;
+            /* border: 1px solid red; */
+            margin-top: 270px;
+        }
+        .btn6{
+            height: 40px;
+            width: 340px;
+            background-color: transparent;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 50px;
+            /* margin-left: 480px; */
+            border: 3px solid black;
+            
+        }
+        .btn6:hover{
+            color: white;
+            background-color: black;
+
+        }
+        .btn7{
+            height: 40px;
+            width: 340px;
+            background-color: rgb(244,244,244);
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-top: 20px;
+            border: none;
+        }
+        .Section11{
+            height: 250vh;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        .textdiv11{
+            height: 150px;
+            width: max-content;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+        .para11{
+            margin-top: 30px;
+        }
+        .imgdiv11{
+            height: 90vh;
+            width: 1350px;
+            margin-left: 90px;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+            border-radius: 15px;
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/d9e26485-e44c-4666-82fc-7a87550cf70d/bvlatuR/std/2450x1124/map_berkeley_bg-2x);
+            background-position: center;
+            background-size: cover;
+        }
+        .milesdiv{
+            height: 250px;
+            width: 1010px;
+            /* border: 1px solid red; */
+            margin-left: 250px;
+            margin-top: 50px;
+            cursor: pointer;
+           
+        }
+        .mblock1{
+            height: 100px;
+            width: 250px;
+            /* border: 1px solid red; */
+            border-top: 3px solid rgb(155,156,159);
+            display: inline-block;
+            vertical-align: top;
+            color: rgb(155,156,159);
+            /* text-align: left; */
+        }
+        .m1{
+            font-size: 23px;
+            font-weight: lighter;
+            /* border-top: 4px solid rgb(155,156,159); */
+            margin-top: 20px;
+        }
+        .miles{
+            font-size: 23px;
+            margin-top: 20px;
+        }
+        .mblock1:hover{
+            color: black;
+            border-top: 4px solid black;
+        }
+        .mblock2{
+            height: max-content;
+            width: 200px;
+            /* border: 1px solid red; */
+            border-top: 3px solid rgb(155,156,159);
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            color: rgb(155,156,159);
+        }
+        .m2{
+            font-size: 23px;
+            font-weight: lighter;
+            /* border-top: 4px solid rgb(155,156,159); */
+            margin-top: 20px;
+        }
+        .miles2{
+            font-size: 23px;
+            margin-top: 20px;
+        }
+        .mblock2:hover{
+            color: black;
+            border-top: 4px solid black;
+        }
+         .mblock3{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid red; */
+            border-top: 3px solid rgb(155,156,159);
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            color: rgb(155,156,159);
+        }
+        .m3{
+            font-size: 23px;
+            font-weight: lighter;
+            /* border-top: 4px solid rgb(155,156,159); */
+            margin-top: 20px;
+        }
+        .miles3{
+            font-size: 23px;
+            margin-top: 50px;
+        }
+        .mblock3:hover{
+            color: black;
+            border-top: 4px solid black;
+        }
+         .mblock4{
+            height: 100px;
+            width: 200px;
+            /* border: 1px solid red; */
+            border-top: 3px solid rgb(155,156,159);
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+            color: rgb(155,156,159);
+        }
+        .m4{
+            font-size: 23px;
+            font-weight: lighter;
+            /* border-top: 4px solid rgb(155,156,159); */
+            margin-top: 20px;
+        }
+        .miles4{
+            font-size: 23px;
+            margin-top: 20px;
+        }
+        .mblock4:hover{
+            color: black;
+            border-top: 4px solid black;
+        }
+        .btn8{
+            height: 40px;
+            width: 240px;
+            border: 3px solid black;
+            background-color: transparent;
+            color: black;
+            margin-left: 350px;
+            margin-top: 100px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn8:hover{
+            background-color: black;
+            color: white;
+        }
+        .parent12{
+            height: 700px;
+            width: 1400px;
+            /* border: 1px solid purple; */
+            margin-left: -200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .textdiv12{
+            height: 85vh;
+            width: max-content;
+            /* border: 1px solid blue; */
+            /* background-color: white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -3px;
+            margin-top: 40px;
+        }
+        /* .rangdiv12{
+            height: 300px;
+            width: max-content;
+            margin-top: 70px;
+            margin-left: 50px;
+            /* border: 1px solid red; */
+         */
+        .r12{
+            font-size: 28px;
+            font-weight: lighter;
+        }
+        .h12{
+            margin-top: 10px;
+        }
+        .p12{
+            margin-top: 20px;
+            line-height: 20px;
+        }
+        .btnborder12{
+            height: 100px;
+            width: 240px;
+            /* border: 1px solid red; */
+            margin-top: 200px;
+        }
+        .btn6{
+            height: 40px;
+            width: 340px;
+            background-color: transparent;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 50px;
+            /* margin-left: 480px; */
+            border: 3px solid black;
+            
+        }
+        .btn6:hover{
+            color: white;
+            background-color: black;
+
+        }
+        .btn9{
+            height: 40px;
+            width: 340px;
+            background-color: rgb(244,244,244);
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-top: 20px;
+            border: none;
+        }
+        .imgdiv12{
+            height: 85vh;
+            width: 750px;
+            /* border: 1px solid blue; */
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/e85955c0-8c27-4015-8931-a391bd0cd4d8/bvlatuR/std/2880x1620/Model-S-Safety-Hero-Desktop-Global?quality=auto-medium&amp;format=auto);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 200px;
+        }
+        .Section13{
+            height: 70vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/c960989c-3359-4caf-8cc7-afb07c372d6f/bvlatuR/std/4096x2560/Autopilot-Hero-Vision-Desktop);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .dblock1{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            text-align: left;
+            margin-top: 50px;
+        }
+        .degree1{
+            color: black;
+            font-size: 24px;
+            text-align: left;
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+        .degree2{
+            text-align: left;
+            margin-top: 10px;
+            margin-left: 60px;
+            font-weight: lighter;
+        }
+        .dblock2{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            text-align: left;
+            margin-top: 120px;
+        }
+        .dblock3{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            text-align: left;
+            margin-top: 140px;
+        }
+        .Section14{
+            height: 30vh;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+        .parent14{
+            height: 220px;
+            width: 1200px;
+            margin-left: 200px;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+        }
+        .textdivright{
+            height: 220px;
+            width: max-content;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .h14{
+            font-weight: lighter;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .hdng14{
+            margin-top: 20px;
+        }
+        .btn2{
+            height: 40px;
+            width: 180px;
+            background-color: transparent;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 50px;
+            /* margin-left: 480px; */
+            border: 2px solid black;
+        }
+        .btn2:hover{
+            color: white;
+            background-color: black;
+        }
+        .btn3{
+            height: 40px;
+            width: 180px;
+            background-color: rgb(244,244,244);
+            color: rgb(57,60,65);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 30px;
+            border: none;
+        }
+        .textdivl{
+            height: 220px;
+            width: max-content;
+            /* border: 1px solid purple; */
+            display: inline-block;
+        }
+        .para14{
+            line-height: 20px;
+            margin-top: 30px;
+            color: rgb(57,60,65);
+        }
+        .Section15{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        .textdiv15{
+            height: 150px;
+            width: max-content;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+        .para15{
+            margin-top: 30px;
+        }
+        .videodiv15{
+            height: 500px;
+            width: 1400px;
+            /* border: 1px solid red; */
+            margin-left: 50px;
+            margin-top: 100px
+        }
+        .Video15{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .milesdiv15{
+            height: 250px;
+            width: 1000px;
+            /* border: 1px solid red; */
+            margin-left: 250px;
+            margin-top: 50px;
+            cursor: pointer;
+           
+        }
+        .mblock5{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            border-top: 3px solid rgb(155,156,159);
+            display: inline-block;
+            vertical-align: top;
+            color: rgb(155,156,159);
+            /* text-align: left; */
+        }
+        .m1{
+            font-size: 17px;
+            font-weight: lighter;
+            /* border-top: 4px solid rgb(155,156,159); */
+            margin-top: 20px;
+        }
+        .miles{
+            font-size: 17px;
+            margin-top: 20px;
+            font-weight: lighter;
+        }
+        .mblock5:hover{
+            color: black;
+            border-top: 4px solid black;
+        }
+        .mblock6{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            border-top: 3px solid rgb(155,156,159);
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            color: rgb(155,156,159);
+        }
+        .m2{
+            font-size: 17px;
+            font-weight: lighter;
+            /* border-top: 4px solid rgb(155,156,159); */
+            margin-top: 20px;
+        }
+        .miles2{
+            font-size: 17px;
+            margin-top: 20px;
+            font-weight: lighter;
+        }
+        .mblock6:hover{
+            color: black;
+            border-top: 4px solid black;
+        }
+         .mblock7{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            border-top: 3px solid rgb(155,156,159);
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            color: rgb(155,156,159);
+        }
+        .m3{
+            font-size: 17px;
+            font-weight: lighter;
+            /* border-top: 4px solid rgb(155,156,159); */
+            margin-top: 20px;
+        }
+        .miles3{
+            font-size: 17px;
+            margin-top: 20px;
+            font-weight: lighter;
+        }
+        .mblock7:hover{
+            color: black;
+            border-top: 4px solid black;
+        }
+         .mblock8{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            border-top: 3px solid rgb(155,156,159);
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+            color: rgb(155,156,159);
+        }
+        .m4{
+            font-size: 17px;
+            font-weight: lighter;
+            /* border-top: 4px solid rgb(155,156,159); */
+            margin-top: 20px;
+        }
+        .miles4{
+            font-size: 17px;
+            margin-top: 20px;
+            font-weight: lighter;
+        }
+        .mblock8:hover{
+            color: black;
+            border-top: 4px solid black;
+        }
+        .Section16{
+            height: 120vh;
+            width: 100%;
+            background-color: black;
+            border: 1px solid;
+        }
+        .imgdiv16{
+            height: 600px;
+            width: 600px;
+            /* border: 1px solid red; */
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/649c549e-12b4-40c6-9294-7e996b8d3ccb/bvlatuR/std/4096x3071/Model-S-Specs-Hero-Desktop-LHD);
+            background-position: center;
+            background-size: cover;
+            margin-left: 100px;
+            margin-top: 70px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .textdiv16{
+            height: 660px;
+            width: 600px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 60px;
+            margin-left: 70px;
+            color: white;
+        }
+        .modelblock{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid rgba(94, 93, 93, 0.888); */
+            /* display: inline-block;
+            vertical-align: top; */
+            /* color: white; */
+            /* margin-left: 70px; */
+            padding: 10px;     
+        }
+        .modelSp{
+            height: 27px;
+            width: 270px;
+            border: 3px solid white;
+            text-align: center;
+            border-radius: 3px;
+            padding: 3px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            
+        }
+        .modelS2{
+            height: 27px;
+            width: 270px;
+            border: 3px solid rgba(141, 139, 139, 0.59);
+            color: rgba(240, 239, 239, 0.59);
+            text-align: center;
+            border-radius: 3px;
+            padding: 3px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -3px;
+            margin-top: 20px;
+        }
+        .boxr{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            display: inline-block;   
+        }
+        .border1{
+            /* line-height: 20px; */
+            border-bottom: 1px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }   
+        .range1{
+            /* text-align: left; */
+            border: 1px solid ;
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            /* margin-top: 30px; */
+            margin-left: 10px;
+            border: none;
+            line-height: 60px;
+        }
+        .nmbr1{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-size: 17px;
+            margin-top: -15px;
+            margin-left: 10px;
+            font-weight: lighter;
+            /* border: 1px solid; */
+           
+        }
+        .border1{
+            /* line-height: 20px; */
+            border-bottom: 1px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .mile1{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .nmbr2{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-size: 17px;
+            margin-top: 10px;
+            font-weight: lighter;
+            margin-left: 10px;
+           
+        }
+        .border1{
+            line-height: 20px;
+            border-bottom: 1.5px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .peak{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .nmbr3{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: lighter;  
+        }
+        .border1{
+            line-height: 20px;
+            border-bottom: 1.5px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .wheels{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .nmbr4{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: lighter;  
+        }
+        .border1{
+            line-height: 20px;
+            border-bottom: 1.5px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .cargo{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .nmbr5{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: lighter;  
+        }
+        .border1{
+            line-height: 20px;
+            border-bottom: 1.5px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .weight{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .nmbr6{
+            text-align: left;
+            /* border: 1px solid red; */
+            width: max-content;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: lighter;  
+        }
+        .boxl{
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 80px;
+            
+        }
+        .border2{
+            /* line-height: 20px; */
+            border-bottom: 1px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }   
+        .acceleration{
+            /* text-align: left; */
+            border: 1px solid ;
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            /* margin-top: 30px; */
+            margin-left: 10px;
+            border: none;
+            line-height: 60px;
+        }
+        .nmbr7{
+            text-align: left;
+            width: max-content;
+            font-size: 17px;
+            margin-top: -15px;
+            margin-left: 10px;
+            font-weight: lighter;  
+        }
+        .disc1{
+            text-align: left;
+            width: max-content;
+            font-size: 17px;
+            margin-top: 5px;
+            margin-left: 10px;
+            font-weight: lighter;  
+            font-style: italic;
+        }
+        .border2{
+            /* line-height: 20px; */
+            border-bottom: 1px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .sp{
+            /* text-align: left; */
+            border: 1px solid ;
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            /* margin-top: 30px; */
+            margin-left: 10px;
+            border: none;
+            line-height: 60px;
+        }
+        .spnmbr8{
+            text-align: left;
+            width: max-content;
+            font-size: 17px;
+            margin-top: -15px;
+            margin-left: 10px;
+            font-weight: lighter;  
+        }
+        .disc2{
+            text-align: left;
+            width: max-content;
+            font-size: 17px;
+            margin-top: 5px;
+            margin-left: 10px;
+            font-weight: lighter;  
+            font-style: italic;
+        }
+        .border2{
+            /* line-height: 20px; */
+            border-bottom: 1px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .drag{
+            /* text-align: left; */
+            border: 1px solid ;
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            /* margin-top: 30px; */
+            margin-left: 10px;
+            border: none;
+            line-height: 60px;
+        }
+        .nmbr9{
+            text-align: left;
+            width: max-content;
+            font-size: 17px;
+            margin-top: -15px;
+            margin-left: 10px;
+            font-weight: lighter;  
+        }
+        .border2{
+            /* line-height: 20px; */
+            border-bottom: 1px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .ptrain{
+            /* text-align: left; */
+            border: 1px solid ;
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            /* margin-top: 30px; */
+            margin-left: 10px;
+            border: none;
+            line-height: 60px;
+        }
+        .nmbr10{
+            text-align: left;
+            width: max-content;
+            font-size: 17px;
+            margin-top: -15px;
+            margin-left: 10px;
+            font-weight: lighter;  
+        }
+        .border2{
+            /* line-height: 20px; */
+            border-bottom: 1px solid rgb(181, 179, 179);
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .smax{
+            /* text-align: left; */
+            border: 1px solid ;
+            width: max-content;
+            font-weight: lighter;
+            font-size: 17px;
+            /* margin-top: 30px; */
+            margin-left: 10px;
+            border: none;
+            line-height: 60px;
+        }
+        .nmbr11{
+            text-align: left;
+            width: max-content;
+            font-size: 17px;
+            margin-top: -15px;
+            margin-left: 10px;
+            font-weight: lighter;  
+        }
+        .btn16{
+            height: 40px;
+            width: 200px;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 600px;
+            cursor: pointer;
+        }
+        .btn16:hover{
+            color: black;
+            background-color: white;
+        }
+        .Section17{
+            height: 120vh;
+            width: 100%;
+            /* border: 1px solid; */
+        }
+        .parent17{
+            height: 100px;
+            width: max-content;
+            /* border: 1px solid red; */
+            margin-top: 250px;
+            margin-left: 200px;
+            display: inline-block;
+        }
+        .h17{
+            font-size: 30px;
+            font-weight: lighter;
+        }
+        .btn13{
+            height: 40px;
+            width: 200px;
+            background-color: transparent;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 50px;
+            /* margin-left: 480px; */
+            border: 3px solid black;
+            
+        }
+        .btn13:hover{
+            color: white;
+            background-color: black;
+
+        }
+        .btn14{
+            height: 40px;
+            width: 200px;
+            background-color: rgb(244,244,244);
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-left: 30px; */
+            margin-top: 20px;
+            border: none;
+        }
+        .imgdiv17{
+            height: 330px;
+            width: 700px;
+            /* border: 1px solid black; */
+            display: inline-block;
+            /* margin-top: 200px; */
+            vertical-align: middle;
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/638101a8-7cab-47b1-9ce4-034f070b7400/bvlatuR/std/1800x998/Model-S-Order-Hero-Desktop-Mobile-LHD?quality=auto-medium&amp;format=auto);
+            background-position: center;
+            background-size: cover;
+            margin-left: 150px;
+        }
+        .p17{
+            text-align: center;
+            font-size: 13px;
+            margin-top: 230px;
+            color: rgb(105, 105, 106);
+        }
+        .p17 a{
+            color: rgb(105, 105, 106);
+        }
+        .Navul3 {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: none;
+            margin-left: 450px;
+            margin-top: 40px;
+            color: black;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .Navul3 a {
+            text-decoration: none;
+            color: rgb(60, 60, 60);
+            padding: 3px;
+            /* border-radius: 5px; */
+        }
+        .footer{
+            list-style: none;
+            display: inline;
+            /* border: 1px solid red; */
+            width: max-content;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Section1">
+        <div class="Navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="url(https://www.freepnglogos.com/uploads/tesla-logo-png-20.png)" alt=""> </a>
+            </div>
+            <ul class="Navul">
+                <li class="Navlist"><a href="./modelS.html">Model S</a></li>
+                <li class="Navlist"><a href="./model3.html">Model 3</a></li>
+                <li class="Navlist"> <a href="./modelx.html">Model X</a></li>
+                <li class="Navlist"><a href="">Model Y</a></li>
+                <li class="Navlist"> <a href="">Solar Roof</a></li>
+                <li class="Navlist"><a href="">Solar Panels</a></li>
+            </ul>
+            <ul class="navul2">
+                <li class="nav2"><a href="">Shop</a></li>
+                <li class="nav2"><a href="">Account</a></li>
+                <li class="nav2"><a href="">More</a></li>
+            </ul>
+        </div>
+        <div class="textdiv1">
+            <h1 class="h1">Model S</h1>
+            <h4 class="plaid">Plaid</h4>
+        </div>
+        <div data-aos="fade-up" class="features">
+            <h2 class="range">396 mi</h2>
+            <h2 class="range">1.99 s</h2>
+            <h2 class="range">200 mph</h2>
+            <h2 class="range">1,020 hp</h2>
+        </div>
+        <div class="details">
+            <h5 class="d1">Range (EPA est.)</h5>
+            <h5 class="d1">0-60 mph*</h5>
+            <h5 class="d1">Top Speed†</h5>
+            <h5 class="d1">Peak Power</h5>
+        </div>
+        <button data-aos="fade-up" class="btn1">Order Now</button>
+    </div>
+    <div class="blackdiv">
+        <h1 data-aos="fade-up" class="h2">Interior of the Future</h1>
+    </div>
+    <div class="Section2"></div>
+    <div class="Section4">
+        <div class="videodiv">
+            <video loop autoplay muted class="Video" src="./images/TTVX74_Model-S-Interior-Carousel-1-Cinematic-Display-Desktop_2WLKVX.mp4"></video>
+        </div>
+        <div class="textdiv4">
+            <div class="slider1"></div>
+            <div class="slider"></div>
+            <div class="slider"></div>
+            <div class="slider"></div>
+            <div class="slider"></div>
+            <h4 class="hdng4">Cinematic Expression</h4>
+            <p class="para4">A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and
+                <br> exceptional responsiveness for gaming, movies and more.</p>
+        </div>
+        <div class="scborder">
+            <div data-aos="fade-up" class="imgdiv1"></div>
+            <div data-aos="fade-up" class="tdiv1">
+                <h4  class="h4">Stay Connected</h4>
+                <h4 class="p4">Instantly connect with multi-device Bluetooth, or fast 
+                   <br> charge devices with wireless and 36-watt USB-C charging.</h4>
+            </div>
+        </div>
+        <div class="immersiveborder">
+            <div data-aos="fade-up" class="tdiv2">
+                <h4  class="h4">Immersive Sound</h4>
+                <h4 class="p4">A 22-speaker, 960-watt audio system with Active Road
+                    <br> Noise Reduction offers immersive listening and studio
+                    <br> -grade sound quality.</h4>
+            </div>
+            <div class="viddiv2">
+                <video loop autoplay muted class="Video2" src="./images/PIUCZZ_MS-Interior-Grid-2-Audio-Desktop_CLFX4X.mp4"></video>
+            </div>
+        </div>
+        <div class="roomborder">
+            <div data-aos="fade-up" class="imgdiv3"></div>
+            <div data-aos="fade-up" class="tdiv3">
+                <h4  class="h4">Room for Everything</h4>
+                <h4 class="p4">With front and rear trunks and fold-flat seats you can fit
+                    <br> your bike without taking the wheel off—and your luggage
+                    <br> too.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="Section5">
+        <div data-aos="fade-up" class="features5">
+            <h2 class="range5">1,020 hp</h2>
+            <h2 class="range5">9.23 s</h2>
+            <h2 class="range5">1.99 s</h2>
+        </div>
+        <div class="details5">
+            <h5 class="d5">Peak Power</h5>
+            <h5 class="d5">@155 mph 1/4 mile</h5>
+            <h5 class="d4">0-60 mph*</h5>
+        </div>
+    </div>
+    <div class="Section6">
+        <div class="parent6">
+            <div data-aos="fade-up" class="textdivr">
+                <h4 class="h6">Plaid</h4>
+                <h1 class="hdng6">Beyond Ludicrous</h1>
+                <button class="btn2">Order Now</button>
+                <button class="btn3">View Inventory</button>
+            </div>
+            <div data-aos="fade-up" class="textdivl">
+                <p class="para6">Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery
+                    <br> architecture for all Model S trims enables back-to-back track runs without performance
+                    <br> degradation. Chat with a Tesla Advisor to learn more about Model S or schedule a demo
+                    <br> drive today.</p>
+            </div>
+        </div>
+    </div>
+    <div class="Section7">
+        <div data-aos="fade-up" class="textdiv7">
+            <h1 class="h7">Electric Powertrain</h1>
+            <p class="para7">Model S platforms unite powertrain and battery technologies for unrivaled performance, range and
+                <br> efficiency. New module and pack thermal architecture allows faster charging and gives you more power
+                <br> and endurance in all conditions.'
+            </p>
+        </div>
+        <div class="imgdiv7"></div>
+        <div class="parenttext">
+            <div class="modelS">
+                <h4 class="t7">Model S</h4>
+                <p class="p7">Dual Motor All-Wheel Drive unlocks more range than any other vehicle in
+                    <br> our current lineup, with insane power and maximum control.</p>
+                <div class="f7">
+                    <div class="block1">
+                        <h2 class="s1">3.1 s</h2>
+                        <h5 class="s2">0-60 mph</h5>
+                    </div>
+                     <div class="block2">
+                        <h2 class="s1">405 mi</h2>
+                        <h5 class="s2">Range (EPA est.)</h5>
+                    </div>
+                    <div class="block3">
+                        <h2 class="s1">670 hp</h2>
+                        <h5 class="s2">Peak Power</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="modelSplaid">
+                <h4 class="tp7">Model S Plaid</h4>
+                <p class="pp7">Maintain 1,000+ horsepower all the way to 200 mph with Tri-Motor All-
+                   <br> Wheel Drive, featuring torque vectoring and three independent carbon-
+                   <br> sleeved rotors.</p>
+                <div class="fp7">
+                    <div class="block1">
+                        <h2 class="s1">1.99 s*</h2>
+                        <h5 class="s2">0-60 mph</h5>
+                    </div>
+                     <div class="block2">
+                        <h2 class="s1">396 mi</h2>
+                        <h5 class="s2">Range (EPA est.)</h5>
+                    </div>
+                    <div class="block3">
+                        <h2 class="s1">1,020 hp</h2>
+                        <h5 class="s2">Peak Power</h5>
+                    </div>
+                </div>
+            </div>
+            <h5 class="footer7">* With rollout subtracted</h5>
+        </div>
+    </div>
+    <div class="Section8">
+        <div class="parent8">
+            <div data-aos="fade-up" class="textdivr8">
+                <h4 class="h8">Exterior</h4>
+                <h1 class="hdng8">Designed for Efficiency</h1>
+                <button class="btn4">Order Now</button>
+                <button class="btn5">View Inventory</button>
+            </div>
+            <div data-aos="fade-up" class="textdivl8">
+                <p class="para8">With a drag coefficient of just .208 Cd, the lowest on the planet, Model S is built for
+                    <br> speed, endurance and range. Improved aerodynamics and a wider chassis offer more
+                    <br> responsive performance so you can take corners quicker and with more confidence.</p>
+            </div>
+        </div>
+    </div>
+    <div class="Section9">
+        <div class="perfborder">
+            <div data-aos="fade-up" class="tdiv9">
+                <h4  class="h9">Relentless Performance</h4>
+                <h4 class="p9">Staggered, performance wheels and tires keep the car
+                    <br> planted and help transfer maximum power down to the
+                    <br> road.</h4>
+            </div>
+            <div data-aos="fade-up" class="imgdiv9"></div>
+        </div>
+        <div class="aerodborder">
+            <div data-aos="fade-up" class="imgdiva9"></div>
+            <div data-aos="fade-up" class="tdiva9">
+                <h4  class="h9">Optimized Aerodynamics</h4>
+                <h4 class="p9">Attention to detail on all exterior surfaces makes Model S
+                    <br> the most aerodynamic production car on Earth.</h4>
+            </div>
+        </div>
+        <div class="stylingborder">
+            <div data-aos="fade-up" class="tdivs9">
+                <h4  class="hs9">Refined Styling</h4>
+                <h4 class="ps9">An iconic silhouette meets refreshed, elegant proportions.</h4>
+            </div>
+            <div data-aos="fade-up" class="imgdivs9"></div>
+        </div>
+    </div>
+    <div class="Section10">
+        <div class="videodiv3">
+            <video loop autoplay muted class="Video3" src="./images/Plaid-Range-Web-Desktop-8mb.mp4"></video>
+            <div data-aos="fade-up" class="parent10">
+                <div class="vblock1">
+                    <h4 class="v1">405 mi</h4>
+                    <h5 class="v2">Go anywhere with up to 405 miles <br> of estimated range on a single charge</h5>
+                </div>
+                 <div class="vblock2">
+                    <h2 class="v1">15 min</h2>
+                    <h5 class="v2">Recharge up to 200 miles in 15 minutes at <br> Supercharger locations</h5>
+                </div>
+                <div class="vblock3">
+                    <h2 class="v1">40,000+</h2>
+                    <h5 class="v2">Superchargers placed along popular <br> routes</h5>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="textdiv10">
+            <div class="rangediv">
+                <h5 class="r10">Range</h5>
+                <h1 class="h10">Go Anywhere</h1>
+                <p class="p10">With up to 405 miles of estimated range and
+                    <br> access to the world’s largest and most
+                    <br> powerful fast charging network, you’ll spend
+                    <br> less time plugged in and more time on the
+                    <br> road. <a href="">Chat with a Tesla Advisor</a> to learn more
+                    <br> about Model S or <a href="">schedule a demo drive</a>
+                    <br> today.</p>
+                <div class="btnborder"> 
+                    <button class="btn6">Order Now</button>
+                    <button class="btn7">Find My Route</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="Section11">
+        <div data-aos="fade-up" class="textdiv11">
+            <h1 class="h11">Freedom to Travel</h1>
+            <p class="para11">Enter a destination on your touchscreen and Trip Planner will automatically calculate your route with Superchargers along the way.</p>
+        </div>
+        <div class="imgdiv11"></div>
+        <div class="milesdiv">
+            <div class="mblock1">
+                <h4 class="m1">San Francisco to Los <br> Angeles</h4>
+                <h1 class="miles">383 miles</h1>
+            </div>
+            <div class="mblock2">
+                <h4 class="m2">Berkeley to Lake <br> Tahoe</h4>
+                <h1 class="miles2">178 miles</h1>
+            </div>
+             <div class="mblock3">
+                <h4 class="m3">Manhattan to Boston</h4>
+                <h1 class="miles3">211 miles</h1>
+            </div>
+               <div class="mblock4">
+                <h4 class="m4">Fort Lauderdale to <br> Orlando</h4>
+                <h1 class="miles4">195 miles</h1>
+            </div>
+            <button class="btn8">Learn More</button>
+            <div class="parent12">
+                <div class="textdiv12">
+                    <h4 class="r12">Safety</h4>
+                    <h1 class="h12">High Impact <br> Protection</h1>
+                    <p class="p12">Model S is built from the ground up as an
+                        <br> electric vehicle, with a high-strength
+                        <br> architecture and floor-mounted battery
+                        <br> pack for incredible occupant protection and
+                        <br> low rollover risk. Every new Model S
+                        <br> includes Tesla’s latest active safety features,
+                        <br> such as Automatic Emergency Braking, at
+                        <br> no extra cost.</p>
+                    <div class="btnborder12"> 
+                        <button class="btn6">Order Now</button>
+                        <button class="btn9">View Inventory</button>
+                    </div>
+    
+                </div>
+                <div class="imgdiv12"></div>
+            </div>
+        </div>
+    </div>
+    <div class="Section13">
+        <div class="dblock1">
+            <h3 class="degree1">360°</h3>
+            <h5 class="degree2">Rear, side and forward-facing cameras <br> provide maximum visibility</h5>
+        </div>
+        <div class="dblock2">
+            <h3 class="degree1">250 m</h3>
+            <h5 class="degree2">Powerful visual processing at up to 250 <br> meters of range</h5>
+        </div>
+        <div class="dblock2">
+            <h5 class="degree2">Tesla Vision detects nearby cars, helps <br> prevent potential collisions and assists <br> with parking</h5>
+        </div>
+    </div>
+    <div class="Section14">
+        <div class="parent14">
+            <div data-aos="fade-up" class="textdivright">
+                <h4 class="h14">Autopilot</h4>
+                <h1 class="hdng14">Future of Driving</h1>
+                <button class="btn2">Order Now</button>
+                <button class="btn3">View Inventory</button>
+            </div>
+            <div data-aos="fade-up" class="textdivl">
+                <p class="para14">Autopilot enables your car to steer, accelerate and brake automatically within its lane
+                    <br> under your active supervision, assisting with the most burdensome parts of driving. With
+                    <br> over-the-air software updates, the latest enhancements are available instantly. Chat with
+                    <br> a Tesla Advisor to learn more about Model S or schedule a demo drive today.</p>
+            </div>
+        </div>
+    </div>
+    <div class="Section15">
+        <div data-aos="fade-up" class="textdiv15">
+            <h1 class="h15">Features</h1>
+            <p class="para15">Enhanced Autopilot and Full Self-Driving capability introduce additional features and improve existing
+                <br> functionality to make your car more capable over time, including:
+            </p>
+        </div>
+        <div class="videodiv15">
+            <video loop autoplay muted class="Video15" src="./images/A7I6LP_lane_change_0.mp4-2000_PYSUF4.mp4"></video>
+        </div>
+        <div class="milesdiv15">
+            <div class="mblock5">
+                <h4 class="m1">Navigate on Autopilot</h4>
+                <h1 class="miles">Active guidance from on <br> -ramp to off-ramp</h1>
+            </div>
+            <div class="mblock6">
+                <h4 class="m2">Auto Lane Change</h4>
+                <h1 class="miles2">Automatically change lanes <br> while driving on the <br> highway</h1>
+            </div>
+             <div class="mblock7">
+                <h4 class="m3">Summon</h4>
+                <h1 class="miles3">Automatically retrieve your car</h1>
+            </div>
+               <div class="mblock8">
+                <h4 class="m4">Autopark</h4>
+                <h1 class="miles4">Parallel and perpendicular <br> parking with a single touch</h1>
+            </div>
+    </div>
+    <div class="Section16">
+        <div class="imgdiv16"></div>
+        <div data-aos="fade-up" class="textdiv16">
+            <h1 class="modelblock">Model S <span style="font-weight: lighter;">Specs</span></h1>
+            <div class="modelSp">Model S Plaid</div>
+            <div class="modelS2">Model S </div>
+            <div class="boxr">
+                <div class="border1"></div>
+                <h5 class="range1">Range (EPA est.)</h5>
+                <h5 class="nmbr1">396 mi</h5>
+                <div class="border1"></div>
+                <h5 class="mile1">1/4 Mile</h5>
+                <h5 class="nmbr2">9.23@155 mph trap speed</h5>
+                <div class="border1"></div>
+                <h5 class="peak">Peak Power</h5>
+                <h5 class="nmbr3">1,020 hp</h5>
+                <div class="border1"></div>
+                <h5 class="wheels">Wheels</h5>
+                <h5 class="nmbr4">19" or 21"</h5>
+                <div class="border1"></div>
+                <h5 class="cargo">Cargo</h5>
+                <h5 class="nmbr5">28 cu ft</h5>
+                <div class="border1"></div>
+                <h5 class="weight">weight</h5>
+                <h5 class="nmbr6">4,766 lbs</h5>
+            </div>   
+            <div class="boxl">
+                <div class="border2"></div>
+                <h5 class="acceleration">Acceleration</h5>
+                <h5 class="nmbr7">1.99 s 0-60 mph</h5>
+                <h5 class="disc1">with rollout subtracted</h5>
+                <div class="border2"></div>
+                <h5 class="sp">†Top Speed</h5>
+                <h5 class="spnmbr8">200 mph</h5>
+                <h5 class="disc2">when equipped with paid <br> hardware upgrades</h5>
+                <div class="border2"></div>
+                <h5 class="drag">Drag Coefficient</h5>
+                <h5 class="nmbr9">0.208 Cd</h5>
+                <div class="border2"></div>
+                <h5 class="ptrain">Powertrain</h5>
+                <h5 class="nmbr10">Tri Motor</h5>
+                <div class="border2"></div>
+                <h5 class="smax">Supercharging Max</h5>
+                <h5 class="nmbr11">250 kW</h5>
+            </div>            
+          
+        </div>
+        <button class="btn16">Compare</button>
+    </div>
+    <div class="Section17">
+        <div data-aos="fade-up" class="parent17">
+            <h2 class="h17">Model S</h2>
+            <button class="btn13">Order Now</button>
+            <button class="btn14">View Inventory</button>
+        </div>
+        <div class="imgdiv17"></div>
+        <p class="p17">Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation
+            <br> and voice commands. Access to features that use cellular data and third-party licenses are subject to
+            <br> change. <a href="">Learn more about Standard Connectivity and any limitations.</a>
+        </p>
+        <ul class="Navul3">
+            <li class="footer"><a href="">Tesla © 2023</a></li>
+            <li class="footer"><a href="">Privacy & Legal </a></li>
+            <li class="footer"><a href="">Vehicle Recalls </a></li>
+            <li class="footer"><a href="">Contact </a></li>
+            <li class="footer"><a href="">Careers </a></li>
+            <li class="footer"><a href="">News </a></li>
+            <li class="footer"><a href="">Engage </a></li>
+            <li class="footer"><a href="">Locations </a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

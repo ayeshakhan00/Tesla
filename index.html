@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .Section1 {
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(./images/images2.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 2px;
+            top: 0;
+            left: 0;
+        }
+
+        .Navbar {
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: transparent;
+            position: fixed;
+            padding: 10px;
+            left: 0;
+            top: 0;
+        }
+
+        .logo {
+            width: 150px;
+            margin-top: 40px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid red; */
+            height: 20px;
+            cursor: pointer;
+            background-image: url(https://www.freepnglogos.com/uploads/tesla-logo-png-20.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .Navul {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: none;
+            margin-left: 250px;
+            margin-top: 40px;
+            color: black;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        .Navlist {
+            list-style: none;
+            display: inline;
+            /* border: 1px solid red; */
+            width: max-content;
+            margin-left: 10px;
+        }
+
+        .Navlist a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .Navlist a:hover{
+            background-color: silver;
+        } 
+
+        .nav2 {
+            list-style: none;
+            display: inline;
+            /* border: 1px solid red; */
+            width: max-content;
+            /* margin-left: 10px; */
+        }
+
+        .nav2 a {
+            text-decoration: none;
+            color: black;
+            margin-left: 15px;
+        }
+
+        .navul2 {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: none;
+            margin-left: 1300px;
+            margin-top: -40px;
+            color: black;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        .h1{
+            font-size: 38px;
+            text-align: center;
+            margin-top: 120px;
+        }
+        .para1{
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn1{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(62,65,69);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 400px;
+            margin-left: 480px;
+            border: none;
+        }
+        .btn2{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(231,231,229);
+            color: rgb(62,65,69);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 40px;
+            border: none;
+        }
+        .Section2{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(./images/images3.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        .h2{
+            font-size: 42px;
+            text-align: center;
+            margin-top: 140px;
+        }
+        .btn1{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(62,65,69);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 480px;
+            margin-left: 480px;
+            border: none;
+        }
+        .btn2{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(231,231,229);
+            color: rgb(62,65,69);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 40px;
+            border: none;
+        }
+        .Section3{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(./images/images4.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        .h3{
+            font-size: 38px;
+            margin-top: 120px;
+            text-align: center;
+        }
+        .para3{
+            margin-top: 10px;
+        }
+        .para3 a{
+            font-size: 20px;
+            margin-left: 680px;
+            font-size: medium;
+            color: black;
+            cursor: pointer;
+        }
+        .para3 a:hover{
+            text-decoration: underline 2px;
+        }
+        .btn1{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(62,65,69);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 400px;
+            margin-left: 480px;
+            border: none;
+        }
+        .btn3{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(231,231,229);
+            color: rgb(62,65,69);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 40px;
+            border: none;
+        }
+        .Section4{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(./images/images5.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+
+        }
+        .h4{
+            font-size: 38px;
+            margin-top: 120px;
+            text-align: center;
+        }
+        .para4{
+            margin-top: 10px;
+        }
+        .para4 a{
+            font-size: 20px;
+            margin-left: 680px;
+            font-size: medium;
+            color: black;
+            cursor: pointer;
+        }
+        .para4 a:hover{
+            border-bottom: 4px solid rgba(0, 0, 0, 0.773);
+        }
+        .btn1{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(62,65,69);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 400px;
+            margin-left: 480px;
+            border: none;
+        }
+        .btn3{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(231,231,229);
+            color: rgb(62,65,69);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 40px;
+            border: none;
+        }
+        .Section5{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(./images/images6.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        .h5{
+            font-size: 42px;
+            text-align: center;
+            margin-top: 140px;
+        }
+        .para5{
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn4{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(62,65,69);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 400px;
+            margin-left: 480px;
+            border: none;
+        }
+        .btn5{
+            height: 40px;
+            width: 280px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: rgb(64, 65, 67);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 40px;
+            border: none;
+        }
+        .Section6{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(./images/images7.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        .h6{
+            font-size: 42px;
+            text-align: center;
+            margin-top: 140px;
+        }
+        .para6{
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn4{
+            height: 40px;
+            width: 280px;
+            background-color: rgb(62,65,69);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 400px;
+            margin-left: 480px;
+            border: none;
+        }
+        .btn5{
+            height: 40px;
+            width: 280px;
+            background-color: rgba(255, 255, 255, 0.703);
+            color: rgb(64, 65, 67);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 40px;
+            border: none;
+        }
+        .Section7{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid; */
+            padding: 2px;
+        }
+        .h7{
+            font-size: 42px;
+            text-align: center;
+            margin-top: 120px;
+        }
+        .imagediv{
+            height: 500px;
+            width: 1500px;
+            /* border: 1px solid red; */
+            background-image: url(./images/images8.jpg);
+            background-position: center;
+            background-size: cover;
+            margin-top: -60px;
+        }
+        .btn7{
+            height: 40px;
+            width: 280px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            /* margin-top: 400px; */
+            margin-left: 620px;
+            border: none;
+        }
+        .Navul3 {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: none;
+            margin-left: 450px;
+            margin-top: 40px;
+            color: black;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .Navul3 a {
+            text-decoration: none;
+            color: rgb(60, 60, 60);
+            padding: 3px;
+            /* border-radius: 5px; */
+        }
+        .footer{
+            list-style: none;
+            display: inline;
+            /* border: 1px solid red; */
+            width: max-content;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Section1">
+        <div class="Navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="url(https://www.freepnglogos.com/uploads/tesla-logo-png-20.png)" alt=""> </a>
+            </div>
+            <ul class="Navul">
+                <li class="Navlist"><a href="./modelS.html">Model S</a></li>
+                <li class="Navlist"><a href="./model3.html">Model 3</a></li>
+                <li class="Navlist"> <a href="./modelx.html">Model X</a></li>
+                <li class="Navlist"><a href="">Model Y</a></li>
+                <li class="Navlist"> <a href="">Solar Roof</a></li>
+                <li class="Navlist"><a href="">Solar Panels</a></li>
+            </ul>
+            <ul class="navul2">
+                <li class="nav2"><a href="">Shop</a></li>
+                <li class="nav2"><a href="">Account</a></li>
+                <li class="nav2"><a href="">More</a></li>
+            </ul>
+        </div>
+        <div class="textdiv1">
+            <h1 class="h1">Model 3</h1>
+            <p class="para1">Leasing starting at $349/mo</p>
+        </div>
+        <button class="btn1">Custom Order</button>
+        <button class="btn2">Demo Drive</button>
+    </div>
+    <div class="Section2">
+        <h1 class="h2">Model Y</h1>
+        <button class="btn1">Custom Order</button>
+        <button class="btn2">Demo Drive</button>
+    </div>
+    <div class="Section3">
+        <h1 class="h3">Model S</h1>
+        <p class="para3"><a href="">Schedule a Demo Drive</a></p>
+        <button class="btn1">Custom Order</button>
+        <button class="btn3">View Inventory</button>
+    </div>
+    <div class="Section4">
+        <h1 class="h4">Model X</h1>
+        <p class="para4"><a href="">Schedule a Demo Drive</a></p>
+        <button class="btn1">Custom Order</button>
+        <button class="btn3">View Inventory</button>
+    </div>
+    <div class="Section5">
+        <h1 class="h5">Solar Panels</h1>
+        <p class="para5">Lowest Cost Solar Panels in America</p>
+        <button class="btn4">Order Now</button>
+        <button class="btn5">Learn More</button>
+    </div>
+    <div class="Section6">
+        <h1 class="h6">Solar Roof</h1>
+        <p class="para6">Produce Clean Energy From Your Roof</p>
+        <button class="btn4">Order Now</button>
+        <button class="btn5">Learn More</button>
+    </div>
+    <div class="Section7">
+        <h1 class="h7">Accessories</h1>
+        <div class="imagediv"></div>
+        <button class="btn7">Shop Now</button>
+        <ul class="Navul3">
+            <li class="footer"><a href="">Tesla © 2023</a></li>
+            <li class="footer"><a href="">Privacy & Legal </a></li>
+            <li class="footer"><a href="">Vehicle Recalls </a></li>
+            <li class="footer"><a href="">Contact </a></li>
+            <li class="footer"><a href="">Careers </a></li>
+            <li class="footer"><a href="">News </a></li>
+            <li class="footer"><a href="">Engage </a></li>
+            <li class="footer"><a href="">Locations </a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

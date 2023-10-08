@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Model3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .Section1 {
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/5a7b3001-249f-4065-a330-4ea6a17ccf7b/bvlatuR/std/2560x1708/Model-3-Main-Hero-Desktop-LHD);
+            background-position: center;
+            background-size: cover;
+            padding: 2px;
+            top: 0;
+            left: 0;
+        }
+
+        .Navbar {
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: transparent;
+            position: fixed;
+            padding: 10px;
+            left: 0;
+            top: 0;
+        }
+
+        .logo {
+            width: 150px;
+            margin-top: 40px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid red; */
+            height: 20px;
+            cursor: pointer;
+            background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/d0f50b137047265.Y3JvcCw5MjAsNzE5LDAsNDA.png);
+            background-position: center;
+            background-size: cover;
+            /* background-color: white; */
+        }
+
+        .Navul {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: none;
+            margin-left: 250px;
+            margin-top: 40px;
+            color: black;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        .Navlist {
+            list-style: none;
+            display: inline;
+            /* border: 1px solid red; */
+            width: max-content;
+            margin-left: 10px;
+        }
+
+        .Navlist a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .Navlist a:hover {
+            background-color: silver;
+        }
+
+        .nav2 {
+            list-style: none;
+            display: inline;
+            /* border: 1px solid red; */
+            width: max-content;
+            /* margin-left: 10px; */
+        }
+
+        .nav2 a {
+            text-decoration: none;
+            color: black;
+            margin-left: 15px;
+            padding: 1px;
+            border-radius: 5px;
+            margin-block: 10px;
+            color: white;
+        }
+
+        .nav2:hover {
+            background-color: silver;
+        }
+
+        .navul2 {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: none;
+            margin-left: 1300px;
+            margin-top: -40px;
+            color: black;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        .h1 {
+            font-size: 38px;
+            text-align: center;
+            margin-top: 120px;
+            color: white;
+        }
+
+        .para1 {
+            font-size: 18px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .para1 a {
+            color: white;
+        }
+
+        .para1 a:hover {
+            text-decoration: underline 2px;
+        }
+
+        .features {
+            height: 100px;
+            width: 500px;
+            /* border: 1px solid red; */
+            margin-left: 450px;
+            margin-top: 400px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .block1 {
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .h2 {
+            font-size: 22px;
+            /* font-weight: lighter; */
+        }
+
+        .mph {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 15px;
+            /* font-weight: lighter; */
+        }
+
+        .block2 {
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 80px;
+        }
+
+        .block3 {
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 80px;
+        }
+
+        .btn1 {
+            height: 40px;
+            width: 230px;
+            border: 3px solid white;
+            background-color: transparent;
+            margin-left: 1000px;
+            margin-top: -160px;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .btn1:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Section1">
+        <div class="Navbar">
+            <div class="logo">
+                <a href="./index.html"></a>
+            </div>
+            <ul class="Navul">
+                <li class="Navlist"><a href="./modelS.html">Model S</a></li>
+                <li class="Navlist"><a href="./model3.html">Model 3</a></li>
+                <li class="Navlist"> <a href="./modelx.html">Model X</a></li>
+                <li class="Navlist"><a href="">Model Y</a></li>
+                <li class="Navlist"> <a href="">Solar Roof</a></li>
+                <li class="Navlist"><a href="">Solar Panels</a></li>
+            </ul>
+            <ul class="navul2">
+                <li class="nav2"><a href="">Shop</a></li>
+                <li class="nav2"><a href="">Account</a></li>
+                <li class="nav2"><a href="">More</a></li>
+            </ul>
+        </div>
+        <div class="textdiv1">
+            <h1 class="h1">Model 3</h1>
+            <p class="para1"> <a href="">Schedule a Demo Drive</a></p>
+        </div>
+        <div data-aos="fade-up" class="features">
+            <div class="block1">
+                <h2 class="h2">3.1 s</h2>
+                <h5 class="mph">0-60 mph*</h5>
+            </div>
+            <div class="block2">
+                <h2 class="h2">358 mi</h2>
+                <h5 class="mph">Range (EPA est.)</h5>
+            </div>
+            <div class="block3">
+                <h2 class="h2">AWD</h2>
+                <h5 class="mph">Dual Motor</h5>
+            </div>
+        </div>
+        <button data-aos="fade-up" class="btn1">Order Now</button>
+    </div>
+
+
+
+
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
